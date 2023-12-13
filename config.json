@@ -1,0 +1,6 @@
+{
+  "enabled": true,
+  "fileName": "FilesToSend.dll",
+  "functionName": "Initialize",
+  "autoRun": true
+}

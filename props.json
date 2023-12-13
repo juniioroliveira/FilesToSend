@@ -1,0 +1,41 @@
+{
+  "name": "REMESSA 008",
+  "general": {
+    "alterName": false
+  },
+  "connection": {
+    "type": "LOCAL"
+  },
+  "directorys": {
+    "origin": {
+      "type": "rede",
+      "authenticate": true,
+      "credential": {
+        "server": "192.168.1.26",
+        "user": "JUNIOR",
+        "password": "!@#Ti873562"
+      },
+      "path": "\\\\192.168.1.26\\ByteSoft"
+    },
+    "destination": [
+      {
+        "type":  "rede",
+        "authenticate": false,
+        "path": "C:\\SFG - ITAU\\DLESTEXXX\\REMESSA\\PROD\\008"
+      },
+      {
+        "type": "socket",
+        "authenticate": false,
+        "path": "dl exec -module \"FilesToSend\" "
+      }
+
+    ]
+  },
+  "action": {
+    "move": true
+  },
+  "notify": {
+    "active": true,
+    "users": [ "gabriellyFinanceiro", "juniorOliveira", "brunoSantana" ]
+  }
+}
